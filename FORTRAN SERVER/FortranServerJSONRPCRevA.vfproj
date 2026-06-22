@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{642EEA1D-1CA9-F1BD-26DA-339F0A0195F9}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/>
+	</Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32" UseCompiler="ifortCompiler">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Debug|x64" UseCompiler="ifxCompiler">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" AdditionalIncludeDirectories=".\AdditionalDirectories" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories=".\AdditionalDirectories" GenerateDebugInformation="true" SubSystem="subSystemConsole" AdditionalDependencies="JSONRPCStaticLibraryRevA.lib "/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Release|Win32" UseCompiler="ifortCompiler">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Release|x64" UseCompiler="ifxCompiler">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" AdditionalIncludeDirectories=".\AdditionalDirectories" RuntimeLibrary="rtMultiThreadedDLL"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories=".\AdditionalDirectories" SubSystem="subSystemConsole" AdditionalDependencies="JSONRPCStaticLibraryRevA.lib "/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+			<File RelativePath=".\json-fortran.lib"/>
+		</Filter>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+			<File RelativePath=".\ConsoleUtils.f90"/>
+			<File RelativePath=".\FortranServerJSONRPC.f90">
+			</File>
+			<File RelativePath=".\Functions.f90"/>
+			<File RelativePath=".\Functions_ArithmeticOps.f90"/>
+			<File RelativePath=".\Functions_Benchmark.f90"/>
+			<File RelativePath=".\Functions_MatrixComplexOps.F90"/>
+			<File RelativePath=".\Functions_MatrixIntegerOps.f90"/>
+			<File RelativePath=".\Functions_MatrixLogicalOps.F90"/>
+			<File RelativePath=".\Functions_MatrixRealOps.f90"/>
+			<File RelativePath=".\Functions_MatrixTextOps.f90"/>
+			<File RelativePath=".\Functions_StringOps.f90"/>
+			<File RelativePath=".\JsonRpcErrorCodes.f90"/>
+		</Filter>
+		<File RelativePath=".\ReadMe.txt"/>
+	</Files>
+	<Globals/>
+</VisualStudioProject>

@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <StartupObject>ClientInterfaceToFortranServer.My.MyApplication</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CLAUDE REVISED 3  FILES FOR SCIENTIFIC NOTATATION\**" />
+    <Compile Remove="files %282%29\**" />
+    <Compile Remove="files %283%29\**" />
+    <Compile Remove="Files not needed\**" />
+    <Compile Remove="ROLLBACK FILES\**" />
+    <EmbeddedResource Remove="CLAUDE REVISED 3  FILES FOR SCIENTIFIC NOTATATION\**" />
+    <EmbeddedResource Remove="files %282%29\**" />
+    <EmbeddedResource Remove="files %283%29\**" />
+    <EmbeddedResource Remove="Files not needed\**" />
+    <EmbeddedResource Remove="ROLLBACK FILES\**" />
+    <None Remove="CLAUDE REVISED 3  FILES FOR SCIENTIFIC NOTATATION\**" />
+    <None Remove="files %282%29\**" />
+    <None Remove="files %283%29\**" />
+    <None Remove="Files not needed\**" />
+    <None Remove="ROLLBACK FILES\**" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Remove="CLAUDE REVISED 3  FILES FOR SCIENTIFIC NOTATATION.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nerdbank.Streams" Version="2.13.16" />
+    <PackageReference Include="StreamJsonRpc" Version="2.24.84" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="10.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JSONRPCNETClientLibrary\JSONRPCClientLibrary.vbproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

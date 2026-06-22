@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>JSONRPCClientLibrary</RootNamespace>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <AssemblyName>JSONRPCClientLibrary</AssemblyName>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nerdbank.Streams" Version="2.13.16" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="StreamJsonRpc" Version="2.24.84" />
+  </ItemGroup>
+
+</Project>
